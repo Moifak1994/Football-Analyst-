@@ -530,7 +530,7 @@ def create_enhanced_heatmap(df: pd.DataFrame, player: str) -> Optional[go.Figure
             [0.4, '#2d82b5'], [0.6, '#42d9c8'],
             [0.8, '#ffd93d'], [1.0, '#ff6b35']
         ],
-        colorbar=dict(title="Activity<br>Density", titleside="right"),
+        colorbar=dict(title=dict(text="Activity<br>Density", side="right")),
         showscale=True
     ))
 
